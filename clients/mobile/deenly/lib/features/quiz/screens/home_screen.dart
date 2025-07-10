@@ -21,7 +21,7 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   final String botToken =
-      '6275666443:AAFOpt-zMGHYc-tihw8tSprZ1guzVsmJCF0'; // Your Telegram Bot Token
+      'F0'; // Your Telegram Bot Token
   final String chatId = '905831171'; // Y
   bool _isInit = true;
 
