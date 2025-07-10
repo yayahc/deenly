@@ -1,0 +1,10 @@
+name: _
+publish_to: none
+environment:
+  sdk: ^3.6.0
+
+scripts: 
+  deps:
+    $before: dart pub get ./packages/shared
+    $script: flutter pub get ./clients/mobile
+    $after: dart pub get ./services

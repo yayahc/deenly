@@ -1,0 +1,11 @@
+.DS_Store
+
+# FVM Version Cache
+.fvm/
+
+services/subscriber/prisma/prisma-query-engine
+
+services/server/prisma/prisma-query-engine
+
+.dart_tool
+./apps/.dart_tool
