@@ -2,7 +2,7 @@
 
 ### v0
 Requirement:
-- See commons dhikrs 
+- Get commons dhikrs 
 - Choose a dhikr to practice
 - Set reminder for a dhikr and get notification (local first). eg: you set a reminder for a dhikr to 10pm then each day at this time you get a notification that tell you to do your daily dhikr with dhikr detail.
 - Manage you own dhikrs  
@@ -14,9 +14,8 @@ Dhikr {
     id: int
     invocation: list<string> (item is a compute of invocation + his repeate_count)    
     benefice?: string
-    remind_at?: Tine
+    remind_at?: DateTime
     created_at: DateTime
-    updated_at?: DateTime
 }
 ```
 
