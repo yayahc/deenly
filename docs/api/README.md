@@ -1,8 +1,7 @@
 #### Basic APIs
 
 - [Auth](./auth.md)
-- [Zikr](./zikr.md)
-- [Tasbih](./tasbih.md)
-- [Streak](./streak.md)
+- [Zikr](./dhikr.md)
+- [Goal](./goal.md)
 - [Quiz](./quizz.md)
 - [Learn](./learn.md)
