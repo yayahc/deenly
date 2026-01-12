@@ -1,0 +1,21 @@
+## Deenly
+
+An `Islamic` app that helps you learn, practice, stay active ...
+
+### Features:
+- [Dhikr](./docs/api/dhikr.md) : A feature that allows you set reminder for your daily dhirk, learn more dhikr with community supprot ...
+- [Goal](./docs/api/goal.md) : This feature is about to let user set a goal I want to achieve eg: read the `Quran` everyday, by this user will be more encouraged to pratice and maintain its streak (kind of gamified experience + reminder)...
+- [Quiz](./docs/api/quiz.md) : Allow user to take quiz and increase their knowledge ... 
+- [Learn](./docs/api/learn.md) : For leaning purpose about Quran and more ...
+
+
+Auth: [SIWG](https://developers.google.com/identity/siwg)
+
+#### TODO
+
+- [x] Write a basic api documentation for base features see [docs/api](./docs/api/readme.md)
+- [ ] Build API contract see [logic](./packages/logic/readme.md)
+- [ ] Build rest server following the [contract](./packages/logic/readme.md) see [server](./services/rest_api_server/readme.md)
+- [ ] Build mobile client see [client/mobile](./clients/mobile/deenly/readme.md)
+
+Author: @YayaHC
