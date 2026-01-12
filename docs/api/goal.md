@@ -13,7 +13,7 @@ Goal {
     id: int
     description: string
     isPrivate: bool
-    streak: int (if market as done then increase the streak count)
+    streak: int (if marked as done then increase the streak count)
     created_at: DateTime
 }
 ```
@@ -32,10 +32,10 @@ Response: `Goal`
 Desc: return user goals
 Response: `List<Goal>`
 
-- [POST] goal/set
+- [POST] goals
 Desc: set a goal (if done requried to create the goal first then use its id to set)
 Request: {goal_id, user_token}
 
-- [DELETE] goal/unset
+- [DELETE] goals/unset
 Desc: un-seta goal
 Request: {goal_id, user_token}
