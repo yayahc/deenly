@@ -9,3 +9,4 @@ services/server/prisma/prisma-query-engine
 
 .dart_tool
 ./apps/.dart_tool
+.vscode
