@@ -14,8 +14,8 @@ Auth: [SIWG](https://developers.google.com/identity/siwg)
 #### TODO
 
 - [x] Write a basic api documentation for base features see [docs/api](./docs/api/readme.md)
-- [ ] Build API contract see [shared](./packages/logic/readme.md)
-- [ ] Build rest server following the [contract](./packages/shared/readme.md) see [server](./services/rest_api_server/readme.md)
+- [ ] Build API contract see [logic](./packages/logic/readme.md)
+- [ ] Build rest server following the [contract](./packages/logic/readme.md) see [server](./services/rest_api_server/readme.md)
 - [ ] Build mobile client see [client/mobile](./clients/mobile/deenly/readme.md)
 
 Author: @YayaHC
