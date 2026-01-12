@@ -25,7 +25,7 @@ Endpoints:
 Desc : return commons dhikrs   
 Response : `List<Dhirk>`
 
-- [GET] dhikr?id=dhikr_id  
+- [GET] dhikrs?id=dhikr_id  
 Desc : return a dhikr  
 Response : `Dhirk`
 

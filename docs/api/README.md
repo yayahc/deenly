@@ -3,5 +3,5 @@
 - [Auth](./auth.md)
 - [Zikr](./dhikr.md)
 - [Goal](./goal.md)
-- [Quiz](./quizz.md)
+- [Quiz](./quiz.md)
 - [Learn](./learn.md)
