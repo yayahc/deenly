@@ -45,6 +45,10 @@ Response: `Learn`
 Desc: set a learn element
 Request: {type, content, user_token}
 
+- [PATCH] learns
+Desc: update a learn element
+Request: {type, content, user_token}
+
 - [DELETE] learns
-Desc: un-seta goal
+Desc: delete a learn element
 Request: {learn_id, user_token}
