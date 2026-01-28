@@ -12,7 +12,8 @@ Basic Models:
 ```
 Dhikr {
     id: int
-    invocation: list<string> (item is a compute of invocation + his repeate_count)    
+    invocation: list<string> (item is a compute of invocation + his repeate_count)  
+    subscribers:   list<token>
     benefice?: string
     remind_at?: DateTime
     created_at: DateTime
@@ -22,7 +23,7 @@ Dhikr {
 Endpoints:
 
 - [GET] dhikrs  
-Desc : return commons dhikrs   
+Desc : return commons dhikrs with user that have subscribed to that dhikr
 Response : `List<Dhirk>`
 
 - [GET] dhikrs?id=dhikr_id  
