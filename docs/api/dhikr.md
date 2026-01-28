@@ -13,9 +13,9 @@ Basic Models:
 Dhikr {
     id: int
     invocation: list<string> (item is a compute of invocation + his repeate_count)  
-    subscribers:   list<token>
+    subscribers:   list<user>
     benefice?: string
-    remind_at?: DateTime
+    remind_id?: int
     created_at: DateTime
 }
 ```
@@ -32,7 +32,7 @@ Response : `Dhirk`
 
 - [POST] dhikrs/subscribe  
 Desc : subscribe to practice a dhikr  
-Request :  {dhikr_id, reminder_id, user_token}  
+Request :  {dhikr_id, reminder_at, user_token}  
 
 - [POST] dhikrs/unsubscribe  
 Desc : unsubscribe to a dhikr  
