@@ -1,4 +1,4 @@
-import 'package:logic/domain/entities/user/user_entities.dart';
+import '../entities.dart';
 
 class DhikrEntity {
   final int id;

@@ -1,7 +1,7 @@
 import 'package:dartz/dartz.dart';
-import 'package:logic/domain/entities/user/user_entities.dart';
 import 'package:logic/domain/repositories/auth/auth_repository.dart';
 import '../../../core/error/error.dart';
+import '../../entities/entities.dart';
 
 class AuthUsecases {
   final IAuthRepository _authRepository;

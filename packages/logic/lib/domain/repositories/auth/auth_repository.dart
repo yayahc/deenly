@@ -1,4 +1,4 @@
-import 'package:logic/domain/entities/user/user_entities.dart';
+import '../../entities/entities.dart';
 
 abstract class IAuthRepository {
   Future<UserEntity> signInWithGoogle();

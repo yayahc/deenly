@@ -1,17 +1,24 @@
 import 'package:logic/domain/entities/dhikr/dhikr_entity.dart';
 import 'package:logic/domain/repositories/dhikr/dhikr_repository.dart';
+import 'package:logic/extensions/dto_extensions.dart';
+
+import '../../remote_datasources/dhikr/dhikr_remote_datasource.dart';
 
 class DhikrRepository implements IDhikrRepository {
+  final IDhikrRemoteDatasource _iDhikrRemoteDatasource;
+
+  DhikrRepository(this._iDhikrRemoteDatasource);
+
   @override
-  Future<DhikrEntity> getDhikr({required int dhikrId}) {
-    // TODO: implement getDhikr
-    throw UnimplementedError();
+  Future<DhikrEntity> getDhikr({required int dhikrId}) async {
+    return (await _iDhikrRemoteDatasource.getDhikr(dhikrId: dhikrId)).toEntity;
   }
 
   @override
-  Future<List<DhikrEntity>> getDhikrs() {
-    // TODO: implement getDhikrs
-    throw UnimplementedError();
+  Future<List<DhikrEntity>> getDhikrs() async {
+    return (await _iDhikrRemoteDatasource.getDhikrs())
+        .map((d) => d.toEntity)
+        .toList();
   }
 
   @override
@@ -19,17 +26,22 @@ class DhikrRepository implements IDhikrRepository {
     required int dhikrId,
     DateTime? reminderAt,
     required String userToken,
-  }) {
-    // TODO: implement subscribeToDhikr
-    throw UnimplementedError();
+  }) async {
+    return (await _iDhikrRemoteDatasource.subscribeToDhikr(
+      dhikrId: dhikrId,
+      userToken: userToken,
+      reminderAt: reminderAt,
+    ));
   }
 
   @override
   Future<bool> unSubscribeToDhikr({
     required int dhikrId,
     required String userToken,
-  }) {
-    // TODO: implement unSubscribeToDhikr
-    throw UnimplementedError();
+  }) async {
+    return (await _iDhikrRemoteDatasource.unSubscribeToDhikr(
+      dhikrId: dhikrId,
+      userToken: userToken,
+    ));
   }
 }
