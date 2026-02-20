@@ -1,13 +1,14 @@
 name: logic
-description: A sample command-line application.
+description: shared logic for services and clients
 version: 1.0.0
 # repository: https://github.com/my_org/my_repo
 
 environment:
-  sdk: ^3.6.0
+  sdk: ^3.8.0
 
 # Add regular dependencies here.
 dependencies:
+  dartz: ^0.10.1
   # path: ^1.8.0
 
 dev_dependencies:

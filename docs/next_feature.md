@@ -1,4 +1,5 @@
 - 4 images 1 word deen version
 - resources
+- quran audio stream
 - 99 names of Allah
 - ...
