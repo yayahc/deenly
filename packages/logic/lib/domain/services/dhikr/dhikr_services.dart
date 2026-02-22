@@ -3,9 +3,9 @@ import 'package:logic/core/error/error.dart';
 import 'package:logic/domain/entities/dhikr/dhikr_entity.dart';
 import 'package:logic/domain/repositories/dhikr/dhikr_repository.dart';
 
-class DhikrUsecases {
+class DhikrServices {
   final IDhikrRepository _dhikrRepository;
-  DhikrUsecases(this._dhikrRepository);
+  DhikrServices(this._dhikrRepository);
 
   Future<Either<SystemError, DhikrEntity>> getDhikr({
     required int dhikrId,

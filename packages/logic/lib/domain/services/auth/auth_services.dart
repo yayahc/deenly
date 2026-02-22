@@ -3,10 +3,10 @@ import 'package:logic/domain/repositories/auth/auth_repository.dart';
 import '../../../core/error/error.dart';
 import '../../entities/entities.dart';
 
-class AuthUsecases {
+class AuthServices {
   final IAuthRepository _authRepository;
 
-  AuthUsecases(this._authRepository);
+  AuthServices(this._authRepository);
 
   Future<Either<SystemError, UserEntity>> signInWithGoogle() async {
     try {
