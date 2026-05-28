@@ -1,10 +1,17 @@
 name: _
 publish_to: none
+
+workspace:
+  - services/rest_api_server
+  - packages/logic
+  - clients/mobile/deenly
+
 environment:
-  sdk: ^3.8.0
+  sdk: ^3.10.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
 
 scripts: 
-  deps:
-    $before: dart pub get ./packages/logic
-    $script: flutter pub get ./clients/mobile
-    $after: dart pub get ./services
+  deps: fvm flutter pub get 
